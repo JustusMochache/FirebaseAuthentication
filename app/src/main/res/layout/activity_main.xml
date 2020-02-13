@@ -10,6 +10,7 @@
     <ImageView
         android:id="@+id/firebase_logo"
         android:layout_width="100sp"
+        android:scaleType="centerCrop"
         android:layout_height="100sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60sp"
@@ -17,7 +18,7 @@
         android:contentDescription="@string/app_name"
         />
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title_app"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/firebase_login"
@@ -30,7 +31,8 @@
         android:gravity="center"
         />
     <ProgressBar
-        android:id="@+id/progress_circular"
+        android:visibility="invisible"
+        android:id="@+id/progress_bar_circular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
